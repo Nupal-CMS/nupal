@@ -11,10 +11,10 @@ router.get('/admin', (req, res) => {
 })
 
 router.get('/admin/modules', (req, res) => {
-    res.end('getty')
+    res.render('admin/modules.get.html.twig')
 })
 
 router.post('/admin/modules', (req, res) => {
-    res.end('posty')
+    res.render('admin/modules.post.html.twig')
 })
 export default router;
