@@ -7,6 +7,7 @@ import bodyParser from 'body-parser'
 
 const app = express()
       app.use(bodyParser.json())
+      app.use(express.static('./public'))
 
 app.engine('twig', Twig.renderFile)
 app.set('view engine', 'twig')

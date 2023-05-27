@@ -6,7 +6,7 @@ import WorkboxWebpackPlugin from 'workbox-webpack-plugin';
 const isProduction = process.env.NODE_ENV == 'production';
 
 
-const stylesHandler = 'style-loader';
+const stylesHandler = 'sass-loader';
 
 
 
@@ -28,10 +28,10 @@ const config = {
             {
                 test: /\.(ts|tsx)$/i,
                 loader: 'ts-loader',
-                exclude: ['/node_modules/', '/modules/', '/lib/', '/sites/', '/index.js'],
+                exclude: ['/node_modules/', '/modules/', '/lib/', '/sites/', '/index.js', '/public/'],
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.s[ac]ss$/g,
                 use: [stylesHandler, 'css-loader', 'sass-loader'],
             },
             {
@@ -48,7 +48,7 @@ const config = {
     },
 };
 
-module.exports = () => {
+export default () => {
     if (isProduction) {
         config.mode = 'production';
         

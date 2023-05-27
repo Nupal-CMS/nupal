@@ -2,10 +2,16 @@
 <html>
 <head>
     <title>Nupal</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/build/bundle.css" />
+    <script type="text/javascript" src="/build/main.js"></script>
+    <script type="text/javascript" src="/build/service-worker.js"></script>
 </head>
 <body>
-    {% block body %}{% endblock %}
+    <main class="container-fluid">
+        <nav class="navbar navbar-default"></nav>
+
+        {% block body %}{% endblock %}
+    </main>
 </body>
 </html>
 <!-- Fueled by NPM -->

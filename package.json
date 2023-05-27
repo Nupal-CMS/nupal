@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "nupal",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "a CMS mimicking Drupal infrastructure, built on Redis, Twig, and Express",
   "main": "index.js",
   "type": "module",
   "scripts": {
