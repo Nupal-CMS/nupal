@@ -1,9 +1,9 @@
-admin.index:
-  path: '/'
-  defaults:
-    _controller: 'admin:index'
-
 admin.modules:
   path: '/modules'
   defaults:
     _controller: 'admin:modules'
+
+admin.index:
+  path: '/'
+  defaults:
+    _controller: 'admin:index'
