@@ -11,7 +11,7 @@ const config = await getConfig('core.system')
 app.use((req, res, next) => {
     res.twig = (tpl, data = {}) => {
         let slug = path.basename(req.baseUrl)
-        res.render(config.theme.machine_name + '/' + slug + '/' + tpl + '.twig', data)
+        return res.render(config.theme.machine_name + '/' + slug + '/' + tpl + '.twig', data)
     }
 
     next()

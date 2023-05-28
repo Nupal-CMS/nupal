@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Nupal</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/public/build/bundle.min.css" />
     <script type="text/javascript" src="/public/build/main.js"></script>
-    <script type="text/javascript" src="/public/build/service-worker.js"></script>
 </head>
 <body>
     <main class="container-fluid h100">
@@ -12,10 +11,11 @@
 
             <section id="sidebar" class="col-lg-1 h100">
                 <img src="/public/images/nupal.png" />
-                {% include './components/menu.html.twig' %}
+                {% include './src/components/menu.html.twig' %}
             </section>
 
             <aside class="col-lg-11 pt-5 ps-5 h100">
+                <h4 class="pb-5">{{ title }}</h4>
                 {% block body %}{% endblock %}
             </aside>
 
