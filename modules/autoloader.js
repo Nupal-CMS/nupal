@@ -22,10 +22,8 @@ for(let mod of modules) {
     for(let key in routes) {
         let route = routes[key]
         let _controller = route.defaults._controller,
-            controller = _controller.split(':')[1],
-            title = route.defaults._title
+            controller = _controller.split(':')[1]
 
-        app.locals.title = title
         app.use('/' + mod + route.path, pod[controller])
     }
 

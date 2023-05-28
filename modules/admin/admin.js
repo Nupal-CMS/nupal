@@ -4,10 +4,12 @@ import * as dotenv from 'dotenv'
 import { getAllModules } from "../../core/modules.js";
 
 export const index = (req, res) => {
+    res.locals.title = 'Administration'
     res.twig()
 }
 
 export const modules = async (req, res) => {
     let modules = await getAllModules()
+    res.locals.title = 'Modules'
     res.twig({ modules })
 }
