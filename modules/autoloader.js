@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import express from "express";
-const app = express.Router()
+const app = express()
 
 let ignore = ['autoloader.js']
 let modules = await fs.readdir('./modules')
@@ -25,6 +25,7 @@ for(let mod of modules) {
             controller = _controller.split(':')[1],
             title = route.defaults._title
 
+        app.locals.title = title
         app.use('/' + mod + route.path, pod[controller])
     }
 
