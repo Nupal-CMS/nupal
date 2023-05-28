@@ -2,6 +2,8 @@
 
 Run `yarn install`
 
+Set the `.env` variables
+
 To bundle the client TypeScript, run `npm run build`
 
 Start it with `node index.js`
@@ -18,7 +20,7 @@ Every module must have a `machine_name.js` and a `machine_name.routing.yml` file
 
 ### Routing
 
-Every module's machine name 
+Every module's machine name is the first argument in all its routes. In `machine_name.js` export constants, one for each route. These will be referenced in the `machine_name.routing.yml` file.
 
 ### Views
 
@@ -57,3 +59,30 @@ res.render('/some/annoying/absolute/path/views/face/admin/index.html.twig', {
 
 You still have access to `res.end`, `res.send`, and `res.render`, `res.twig` just autoloads templates for fun if you want to use it.
 
+### YAML
+
+The `machine_name.routing.yml` file mimicks Symfony's standards. Here's the one for the `admin` module:
+
+```
+
+// found in admin.js
+export const modules = (req, res) => {
+    ...
+}
+
+// found in YAML
+admin.modules:
+  path: '/modules'
+  defaults:
+    _controller: 'admin:modules'
+```
+
+### Theme
+
+I'm working on the first theme. But right now the API is like this: `git clone` a theme into `views`, and change it in the `config/core.system.yml` file. Look at what I've said about routing earlier.
+
+### TypeScript
+The entrypoint to the JavaScript front end is `src/index.ts`
+
+### SCSS
+The entrypoint to the CSS front end is `views/face/src/scss/index.scss`
