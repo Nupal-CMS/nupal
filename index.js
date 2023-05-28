@@ -7,16 +7,13 @@ import bodyParser from 'body-parser'
 
 const app = express()
       app.use(bodyParser.json())
-      app.use(express.static('./public'))
+      app.use('/public', express.static('./public'))
 
 app.engine('twig', Twig.renderFile)
 app.set('view engine', 'twig')
 
-import admin from './modules/admin/app.js'
-app.use(admin)
-
 import autoloader from './modules/autoloader.js'
-app.use(autoloader)
+app.use('/', autoloader)
 
 app.listen(process.env.PORT, err => {
     if(err) throw err

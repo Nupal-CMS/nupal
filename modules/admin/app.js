@@ -1,20 +1,10 @@
 import * as dotenv from 'dotenv'
             dotenv.config()
 
-import cluster from '../../lib/redis.js'
+import express from 'express'
+const app = express()
 
-import { Router } from 'express';
-const router = Router()
-
-router.get('/admin', (req, res) => {
+app.get('/', (req, res) => {
     res.render('admin/index.html.twig')
 })
-
-router.get('/admin/modules', (req, res) => {
-    res.render('admin/modules.get.html.twig')
-})
-
-router.post('/admin/modules', (req, res) => {
-    res.render('admin/modules.post.html.twig')
-})
-export default router;
+export default app

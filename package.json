@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production --node-env=production",
+    "build": "webpack --mode=production --node-env=production --config webpack.config.js",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
@@ -35,11 +35,13 @@
   "dependencies": {
     "@webpack-cli/generators": "^3.0.4",
     "body-parser": "^1.20.2",
+    "bootstrap": "5.3.0-alpha3",
     "cli-progress": "^3.12.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "helmet": "^7.0.0",
     "ioredis": "^5.3.2",
+    "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.7.6",
     "module": "^1.2.5",
     "node-sass": "^9.0.0",

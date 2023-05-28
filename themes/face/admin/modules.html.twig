@@ -1,0 +1,23 @@
+{% extends '../base.html.twig' %}
+{% block body %}
+    <table class="table table-sm">
+        <thead>
+            <tr>
+
+                <th>Enabled</th>
+                <th>Module</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for module in modules %}
+                <tr>
+
+                    <td><input type="checkbox" /></td>
+                    <td>{{ module }}</td>
+
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

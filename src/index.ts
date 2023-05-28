@@ -1,1 +1,3 @@
-console.log("Helloo");
+console.log("Nupal.");
+import '../scss/index.scss';
+
