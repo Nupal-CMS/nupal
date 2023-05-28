@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv'
             dotenv.config()
 
-import app from './lib/app.js'
+import app from './core/app.js'
 import Twig from 'twig'
 import express from 'express'
 import bodyParser from 'body-parser'
