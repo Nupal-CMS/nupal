@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknupal=self.webpackChunknupal||[]).push([[764],{764:(s,e,p)=>{s.exports=p.p+"bundle.min.css"}}]);

@@ -2,8 +2,8 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
+    "module": "node16",
+    "target": "es2017",
     "allowJs": true
   },
   "files": ["src/index.ts"]

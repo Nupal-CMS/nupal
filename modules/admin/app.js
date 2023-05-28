@@ -5,6 +5,6 @@ import express from 'express'
 const app = express()
 
 app.get('/', (req, res) => {
-    res.render('admin/index.html.twig')
+    res.twig('index.html')
 })
 export default app

@@ -7,15 +7,15 @@
     <script type="text/javascript" src="/public/build/service-worker.js"></script>
 </head>
 <body>
-    <main class="container-fluid">
-        <div class="row">
+    <main class="container-fluid h100">
+        <div class="row h100">
 
-            <section class="col-lg-1">
+            <section id="sidebar" class="col-lg-1 h100">
                 <img src="/public/images/nupal.png" />
-                {% include 'components/menu.html.twig' %}
+                {% include './components/menu.html.twig' %}
             </section>
 
-            <aside class="col-lg-11 pt-5">
+            <aside class="col-lg-11 pt-5 ps-5 h100">
                 {% block body %}{% endblock %}
             </aside>
 
