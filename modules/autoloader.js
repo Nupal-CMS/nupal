@@ -15,7 +15,6 @@ let modules = await fs.readdir('./modules')
     modules = _.reject(modules, o => ignore.indexOf(o) > -1)
 
 for(let mod of modules) {
-    //app.use('/' + mod, route.default)
 
     let pod = await import(__dirname + `/${mod}/${mod}.js`)
     let routes = await yaml(__dirname + `/${mod}/${mod}.routing.yml`)
@@ -25,7 +24,7 @@ for(let mod of modules) {
         let _controller = route.defaults._controller,
             controller = _controller.split(':')[1]
 
-        app.use(route.path, pod[controller])
+        app.use('/' + mod + route.path, pod[controller])
     }
 
 }

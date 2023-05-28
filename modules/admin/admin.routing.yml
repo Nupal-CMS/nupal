@@ -1,5 +1,5 @@
 admin.index:
-  path: '/admin'
+  path: '/'
   defaults:
     _title: 'Administration'
     _controller: 'nupal/admin:index'
