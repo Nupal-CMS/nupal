@@ -1,2 +1,8 @@
+path: /home/t/www/nupal/config
+
 theme:
   machine_name: face
+
+module:
+  path: /home/t/www/nupal/modules
+
