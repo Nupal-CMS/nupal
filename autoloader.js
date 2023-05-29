@@ -1,11 +1,5 @@
-import * as fs from 'node:fs/promises'
-
 import yaml from 'read-yaml-file'
 import { getEnabledModules } from './core/modules.js'
-
-import { dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
-const __dirname = dirname(fileURLToPath(import.meta.url))
 
 import express from "express"
 const app = express()
