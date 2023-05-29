@@ -3,8 +3,8 @@ import * as fs from 'node:fs/promises'
 import _ from 'lodash'
 import yaml from 'read-yaml-file'
 
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import express from "express";
@@ -16,15 +16,18 @@ let modules = await fs.readdir('./modules')
 
 for(let mod of modules) {
 
-    let pod = await import(__dirname + `/${mod}/${mod}.js`)
+    let nodule = await import(__dirname + `/${mod}/${mod}.js`)
     let routes = await yaml(__dirname + `/${mod}/${mod}.routing.yml`)
 
     for(let key in routes) {
         let route = routes[key]
-        let _controller = route.defaults._controller,
-            controller = _controller.split(':')[1]
 
-        app.use('/' + mod + route.path, pod[controller])
+        app.use((req, res, next) => {
+            res.locals.title = route.defaults._title
+            next()
+        })
+
+        app.use('/' + mod + route.path, nodule[route.defaults._controller])
     }
 
 }

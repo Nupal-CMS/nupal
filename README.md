@@ -61,7 +61,7 @@ You still have access to `res.end`, `res.send`, and `res.render`, `res.twig` jus
 
 ### YAML
 
-The `machine_name.routing.yml` file mimicks Symfony's standards. Here's the one for the `admin` module:
+The `machine_name.routing.yml` file lightly mimicks Symfony's standards. Here's the one for the `admin` module:
 
 ```
 
@@ -72,13 +72,13 @@ export const modules = (req, res) => {
 
 // found in YAML
 admin.modules:
-  path: '/modules'
+  path: '/modules' # will route to /admin/modules
   defaults:
-    _controller: 'admin:modules'
+    _title: 'Modules'
+    _controller: 'modules'
 ```
 
 ### Theme
-
 I'm working on the first theme. But right now the API is like this: `git clone` a theme into `views`, and change it in the `config/core.system.yml` file. Look at what I've said about routing earlier.
 
 ### TypeScript
