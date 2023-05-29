@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv'
             dotenv.config()
 
-import app from './core/app.js'
+import app from './vendor/dharkflower/nupal/js/core/app.js'
 import Twig from 'twig'
 import express from 'express'
 import bodyParser from 'body-parser'

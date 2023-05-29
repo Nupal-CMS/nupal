@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv'
             dotenv.config()
 
-import { getAllModules } from "../../core/modules.js";
+import { getEnabledModules } from './src/core/modules.js'
 
 export const index = (req, res) => {
     res.twig()

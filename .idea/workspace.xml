@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1789cc0-f7bf-4001-8dff-81eb8be69a8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src/core/modules.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/factory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin.middleware.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin.routing.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/middleware/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src/middleware/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src/core/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src/core/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src/core/factory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/orm.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src/core/orm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/redis.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src/core/redis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src/core/schema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/admin/admin.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoloader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/face/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/face/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/face/src/components/menu.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +56,7 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/t/www/tripod",
+    "last_opened_file_path": "/home/t/www/nupal/vendor/dharkflower/nupal",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
@@ -58,12 +64,15 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vendor/dharkflower/nupal" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vendor/dharkflower/nupal/js/src" />
+      <recent name="$PROJECT_DIR$/vendor/dharkflower/nupal/js" />
+      <recent name="$PROJECT_DIR$/vendor/dharkflower" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/modules/admin/src" />
-      <recent name="$PROJECT_DIR$/views/face/src" />
-      <recent name="$PROJECT_DIR$/views/face/admin" />
-      <recent name="$PROJECT_DIR$/views/face/admin/modules" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

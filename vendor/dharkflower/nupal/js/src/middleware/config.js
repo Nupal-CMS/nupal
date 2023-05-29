@@ -1,4 +1,4 @@
-import cluster from '../../../../core/redis.js'
+import cluster from ''
 
 export default async (req, res, next) => {
     res.locals.config = Object.assign({}, await cluster.hgetall('config'))

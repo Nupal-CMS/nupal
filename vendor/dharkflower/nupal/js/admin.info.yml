@@ -1,0 +1,18 @@
+name: admin
+
+middleware:
+  - config.js
+
+routing:
+
+  admin.modules:
+    path: '/modules'
+    defaults:
+      _title: 'Modules'
+      _controller: 'modules'
+
+  admin.index:
+    path: '/'
+    defaults:
+      _title: 'Administration'
+      _controller: 'index'

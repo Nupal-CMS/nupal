@@ -2,18 +2,20 @@ import * as fs from 'node:fs/promises'
 
 import _ from 'lodash'
 import yaml from 'read-yaml-file'
+import cluster from "./core/redis.js"
+import { getEnabledModules } from './vendor/dharkflower/nupal/js/src/core/modules.js'
 
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import express from "express";
-import cluster from "./core/redis.js";
 const app = express()
 
-let ignore = ['autoloader.js']
-let modules = await cluster.hgetall('modules')
-    modules = _.reject(modules, o => ignore.indexOf(o) > -1)
+const modules = await getEnabledModules()
+console.log(modules)
+
+/*
 
 for(let mod of modules) {
 
@@ -39,4 +41,8 @@ for(let mod of modules) {
 
 
 }
+
+ */
+
+
 export default app;
