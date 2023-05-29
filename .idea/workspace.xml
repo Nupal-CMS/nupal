@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1789cc0-f7bf-4001-8dff-81eb8be69a8e" name="Changes" comment="" />
+    <list default="true" id="e1789cc0-f7bf-4001-8dff-81eb8be69a8e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/factory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/admin/admin.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/face/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/face/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/face/src/components/menu.html.twig" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +30,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,6 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/t/www/tripod",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,11 +59,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/modules/admin/src" />
+      <recent name="$PROJECT_DIR$/views/face/src" />
       <recent name="$PROJECT_DIR$/views/face/admin" />
       <recent name="$PROJECT_DIR$/views/face/admin/modules" />
-      <recent name="$PROJECT_DIR$/views/face/src" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/views/face" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

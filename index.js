@@ -13,7 +13,7 @@ app.use('/public', express.static('./public'))
 app.engine('twig', Twig.renderFile)
 app.set('view engine', 'twig')
 
-import autoloader from './modules/autoloader.js'
+import autoloader from './autoloader.js'
 app.use('/', autoloader)
 
 app.listen(process.env.PORT, err => {

@@ -8,16 +8,23 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import express from "express";
+import cluster from "./core/redis.js";
 const app = express()
 
 let ignore = ['autoloader.js']
-let modules = await fs.readdir('./modules')
+let modules = await cluster.hgetall('modules')
     modules = _.reject(modules, o => ignore.indexOf(o) > -1)
 
 for(let mod of modules) {
 
     let nodule = await import(__dirname + `/${mod}/${mod}.js`)
     let routes = await yaml(__dirname + `/${mod}/${mod}.routing.yml`)
+    let middleware = await yaml(__dirname + `/${mod}/${mod}.middleware.yml`)
+
+    for(let mid of middleware.middleware) {
+        let m = await import(__dirname + `/${mod}/src/middleware/${mid}`)
+        app.use(m.default)
+    }
 
     for(let key in routes) {
         let route = routes[key]
@@ -29,6 +36,7 @@ for(let mod of modules) {
 
         app.use('/' + mod + route.path, nodule[route.defaults._controller])
     }
+
 
 }
 export default app;
