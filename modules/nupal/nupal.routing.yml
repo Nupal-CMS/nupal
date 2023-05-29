@@ -1,0 +1,11 @@
+admin.modules:
+  path: '/modules'
+  defaults:
+    _title: 'Modules'
+    _controller: 'admin:modules'
+
+admin.index:
+  path: '/'
+  defaults:
+    _title: 'Nupal'
+    _controller: 'admin:index'
