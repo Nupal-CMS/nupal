@@ -64,8 +64,7 @@ You still have access to `res.end`, `res.send`, and `res.render`, `res.twig` jus
 The `machine_name.routing.yml` file lightly mimicks Symfony's standards. Here's the one for the `admin` module:
 
 ```
-
-// found in admin.js
+// found in src/controllers/admin.js
 export const modules = (req, res) => {
     ...
 }
@@ -75,7 +74,7 @@ admin.modules:
   path: '/modules' # will route to /admin/modules
   defaults:
     _title: 'Modules'
-    _controller: 'modules'
+    _controller: 'admin:modules'
 ```
 
 ### Theme
@@ -85,4 +84,4 @@ I'm working on the first theme. But right now the API is like this: `git clone` 
 The entrypoint to the JavaScript front end is `src/index.ts`
 
 ### SCSS
-The entrypoint to the CSS front end is `views/face/src/scss/index.scss`
+The entrypoint to the CSS front end is `src/index.scss`

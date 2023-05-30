@@ -10,13 +10,13 @@ for(let mod of modules) {
 
     try {
         const modRoot = './modules/' + mod
-        const info = await yaml(`${modRoot}/nupal.info.yml`)
+        const info = await yaml(`${modRoot}/${mod}.info.yml`)
 
         if(info) {
 
             // middleware
             try {
-                let middleware = await yaml(`${modRoot}/nupal.middleware.yml`)
+                let middleware = await yaml(`${modRoot}/${mod}.middleware.yml`)
                 for(let mid of middleware.middleware) {
                     const _mid = await import(`${modRoot}/src/middleware/${mid}.js`)
                     app.use('/', _mid.default)
@@ -27,7 +27,7 @@ for(let mod of modules) {
 
             // routing
             try {
-                let routes = await yaml(`${modRoot}/nupal.routing.yml`)
+                let routes = await yaml(`${modRoot}/${mod}.routing.yml`)
                 for(let key in routes) {
                     let route = routes[key]
 
