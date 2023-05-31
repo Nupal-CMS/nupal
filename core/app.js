@@ -5,7 +5,7 @@ import express from 'express'
 const app = express()
 
 import { getConfig } from './config.js'
-const config = await getConfig('core.public')
+const config = await getConfig('core.system')
 
 app.use((req, res, next) => {
 
