@@ -1,11 +1,13 @@
 admin.modules:
   path: '/modules'
   defaults:
-    _title: 'Modules'
     _controller: 'admin:modules'
+  parameters:
+    title: 'Modules'
 
 admin.index:
   path: '/'
   defaults:
-    _title: 'Nupal'
-    _controller: 'admin:index'
+    _template: 'index.html'
+  parameters:
+    title: 'Nupal'
