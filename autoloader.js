@@ -2,7 +2,7 @@ import yaml from 'read-yaml-file'
 import { getEnabledModules } from './core/modules.js'
 
 import express from "express"
-const app = express()
+const router = express.Router()
 
 const modules = await getEnabledModules()
 for(let mod of modules) {
@@ -19,7 +19,7 @@ for(let mod of modules) {
                 let middleware = await yaml(`${modRoot}/${mod}.middleware.yml`)
                 for(let mid of middleware.middleware) {
                     const _mid = await import(`${modRoot}/src/middleware/${mid}.js`)
-                    app.use('/', _mid.default)
+                    router.use('/', _mid.default)
                 }
             } catch(e) {
                 console.error(e)
@@ -35,13 +35,13 @@ for(let mod of modules) {
                           controller = await import(`${modRoot}/src/controller/${str[0]}.js`),
                           method = controller[str[1]]
 
-                    app.use((req, res, next) => {
+                    router.use((req, res, next) => {
                         res.locals.title = route.defaults._title
                         next()
                     })
 
                     const slug = '/' + mod + route.path
-                    app.use(slug, method)
+                    router.all(slug, method)
                 }
 
             } catch(e) {
@@ -54,4 +54,4 @@ for(let mod of modules) {
     }
 }
 
-export default app
+export default router

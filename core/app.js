@@ -5,20 +5,15 @@ import express from 'express'
 const app = express()
 
 import { getConfig } from './config.js'
-const config = await getConfig('core.system')
+const config = await getConfig('core.public')
 
 app.use((req, res, next) => {
 
-    res.twig = async (data = {}) => {
+    res.twig = (template, data) => {
 
-        let template, arg = req.baseUrl.split('/').filter(s => s !== '')
-        if(arg.length === 1) {
-            template = config.theme.machine_name + '/' + arg[0] + '/index.html.twig'
-        } else {
-            template = config.theme.machine_name + '/' + arg.join('/') + '.html.twig'
-        }
+        let tpl = config.theme.machine_name + '/' + template + '.twig'
+        return res.render(tpl, data)
 
-        return res.render(template, data)
     }
 
     next()
