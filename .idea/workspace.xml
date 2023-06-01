@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1789cc0-f7bf-4001-8dff-81eb8be69a8e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nupal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nupal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/face/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/face/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/face/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/face/menu.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
