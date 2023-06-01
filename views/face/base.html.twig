@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ parameters.title }}</title>
+    <title>{% block title %}{{ info.parameters.title }}{% endblock %}</title>
     <link rel="stylesheet" href="/public/build/bundle.min.css" />
     <script type="text/javascript" src="/public/build/main.js"></script>
 </head>
@@ -15,7 +15,7 @@
             </section>
 
             <aside class="col-lg-11 px-5 py-5 h100">
-                <h4 class="pb-5">{{ parameters.title }}</h4>
+                <h4 class="pb-5">{% block title %}{{ info.parameters.title }}{% endblock %}</h4>
                 {% block body %}{% endblock %}
             </aside>
 
@@ -23,5 +23,6 @@
     </main>
 </body>
 </html>
+
 <!-- Fueled by NPM -->
-<!-- Powered by Drupal -->
+<!-- Powered by Nupal -->

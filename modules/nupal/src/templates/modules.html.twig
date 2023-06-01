@@ -8,15 +8,15 @@
         <table class="table table-sm table-light">
         <thead>
             <tr>
-                <th><input type="checkbox" /></th>
+                <th>&nbsp;</th>
                 <th>Module</th>
             </tr>
         </thead>
         <tbody>
-        {% for mod in enabledModules %}
+        {% for mod in allModules %}
 
             <tr>
-                <td>&nbsp;</td>
+                <td><input type="checkbox" name="{{ mod }}" {% if enabledModules.includes(mod) %} checked="checked" {% endif %} /></td>
                 <td>{{ mod }}</td>
             </tr>
 
