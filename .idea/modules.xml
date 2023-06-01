@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/nupal.iml" filepath="$PROJECT_DIR$/.idea/nupal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nupal-cli/.idea/nupal-cli.iml" filepath="$PROJECT_DIR$/../nupal-cli/.idea/nupal-cli.iml" />
     </modules>
   </component>
 </project>

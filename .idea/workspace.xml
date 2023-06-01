@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1789cc0-f7bf-4001-8dff-81eb8be69a8e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nupal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nupal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/nupal.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/nupal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/src/middleware/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/middleware/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/face/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/face/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
   <component name="ProjectId" id="2QONxF9gmhwiT2AnmxBnQtFyTfm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +49,7 @@
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "18.15.0",
     "javascript.nodejs.core.library.typings.version": "18.15.0",
-    "last_opened_file_path": "/home/t/www/nupal/vendor/dharkflower/nupal",
+    "last_opened_file_path": "/home/t/www/nupal-cli",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
@@ -60,11 +62,11 @@
       <recent name="$PROJECT_DIR$/vendor/dharkflower/nupal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$/modules/nupal/src/templates" />
       <recent name="$PROJECT_DIR$/views/face" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/modules/nupal-element" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
