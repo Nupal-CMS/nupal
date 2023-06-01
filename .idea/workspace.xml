@@ -6,12 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e1789cc0-f7bf-4001-8dff-81eb8be69a8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/core.system.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/core.system.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/nupal.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/nupal.routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nupal/nupal.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/nupal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/face/nupal/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/face/nupal/modules.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,20 +43,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/t/www/nupal/vendor/dharkflower/nupal&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/t/www/nupal/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "18.15.0",
+    "javascript.nodejs.core.library.typings.version": "18.15.0",
+    "last_opened_file_path": "/home/t/www/nupal/vendor/dharkflower/nupal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "ts.external.directory.path": "/home/t/www/nupal/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vendor/dharkflower/nupal" />

@@ -1,15 +1,8 @@
-{% extends '../base.html.twig' %}
+{% extends 'face/base.html.twig' %}
 {% block body %}
     <table class="table table-sm table-light">
         <tbody>
-            {% for module in modules %}
-                <tr>
 
-                    <td><input type="checkbox" /></td>
-                    <td>{{ module }}</td>
-
-                </tr>
-            {% endfor %}
         </tbody>
     </table>
 {% endblock %}
