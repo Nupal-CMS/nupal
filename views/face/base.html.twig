@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ title }}</title>
+    <title>{{ parameters.title }}</title>
     <link rel="stylesheet" href="/public/build/bundle.min.css" />
     <script type="text/javascript" src="/public/build/main.js"></script>
 </head>
@@ -14,8 +14,8 @@
                 {% include './menu.html.twig' %}
             </section>
 
-            <aside class="col-lg-11 pt-5 ps-5 h100">
-                <h4 class="pb-5">{{ title }}</h4>
+            <aside class="col-lg-11 px-5 py-5 h100">
+                <h4 class="pb-5">{{ parameters.title }}</h4>
                 {% block body %}{% endblock %}
             </aside>
 

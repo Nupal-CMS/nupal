@@ -1,6 +1,29 @@
 {% extends env.VIEWS_PATH_RELATIVE ~ '/' ~ req.theme ~ '/base.html.twig' %}
+{% block title %}
+{{ req.info.parameters.title }}
+{% endblock %}
 {% block body %}
+    <form>
 
-    Hello
+        <table class="table table-sm table-light">
+        <thead>
+            <tr>
+                <th><input type="checkbox" /></th>
+                <th>Module</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for mod in enabledModules %}
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>{{ mod }}</td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+        </table>
+
+    </form>
 
 {% endblock %}

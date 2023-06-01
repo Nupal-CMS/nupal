@@ -1,8 +1,6 @@
 import * as dotenv from 'dotenv'
             dotenv.config()
 
-const __dirname = new URL('..', import.meta.url).pathname;
-
 import app from './core/app.js'
 import Twig from 'twig'
 import express from 'express'

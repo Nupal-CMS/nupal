@@ -1,9 +1,11 @@
 import * as dotenv from 'dotenv'
             dotenv.config()
 
-import { getEnabledModules } from '../../../../core/modules.js'
+import { getEnabledModules, getAllModules } from '../../../../core/modules.js'
 
 export const modules = async (req, res) => {
-    let enabled = await getEnabledModules()
-    res.render('modules.html', { enabled })
+    res.render('modules.html', {
+        allModules: await getAllModules(),
+        enabledModules: await getEnabledModules()
+    })
 }

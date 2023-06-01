@@ -1,5 +1,7 @@
-// Generated using webpack-cli https://github.com/webpack/webpack-cli
-import path from 'node:path';
+import path from 'node:path'
+import Dotenv from 'dotenv-webpack'
+import osBrowserify from 'os-browserify'
+import webpack from 'webpack'
 
 const config = {
     entry: './src/index.ts',
@@ -8,14 +10,15 @@ const config = {
     },
     resolve: {
         fallback: {
-            "os": false,
+            "os": 'os-browserify',
             "fs": false,
             "path": false
         }
     },
     plugins: [
-        // Add your plugins here
-        // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+        new webpack.ProvidePlugin({
+            process: 'process/browser',
+        }),
     ],
     module: {
         rules: [
@@ -31,8 +34,8 @@ const config = {
             }
         ]
     },
-};
+}
 
 export default () => {
-    return config;
-};
+    return config
+}
