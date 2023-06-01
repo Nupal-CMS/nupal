@@ -10,13 +10,13 @@ import yaml from 'read-yaml-file'
 import path from 'node:path'
 
 import express from "express"
-const app = express()
+const router = express.Router()
 
 // main module loader
 for(let mod of modules) {
     const modRoot = path.join(__dirname, 'modules', mod)
     const _mod = await import(`${modRoot}/${mod}.js`)
-    app.use(_mod.default)
+    router.use(_mod.default)
 }
 
 // middleware and routes
@@ -26,7 +26,7 @@ for(let mod of modules) {
     try {
         const modRoot = path.join(__dirname, 'modules', mod)
         const info = await yaml(`${modRoot}/${mod}.info.yml`)
-        app.use((req, res, next) => {
+        router.use((req, res, next) => {
             req.info = info
             next()
         })
@@ -38,7 +38,7 @@ for(let mod of modules) {
                 let middleware = await yaml(`${modRoot}/${mod}.middleware.yml`)
                 for(let mid of middleware.middleware) {
                     const _mid = await import(`${modRoot}/src/middleware/${mid}.js`)
-                    app.use(_mid.default)
+                    router.use(_mid.default)
                 }
             } catch(e) {
                 console.error(e)
@@ -51,11 +51,11 @@ for(let mod of modules) {
                     let route = routes[key]
 
                     if(route.defaults.hasOwnProperty('_template')) {
-                        app.use((req, res, next) => {
-                            res.locals = Object.assign({}, res.locals, route.parameters)
-                            let routePath = path.join(modRoot, 'src', 'templates', route.defaults._template + '.twig')
-                            let rendered = Twig.renderFile(routePath);
-                            res.end(rendered)
+                        router.all(path.join('/', mod, route.path), async (req, res, next) => {
+                            res.render(route.defaults._template, {}, (err, html) => {
+                                if(err) console.error('_template error:', err)
+                                res.end(html)
+                            })
                         })
                     }
 
@@ -66,7 +66,7 @@ for(let mod of modules) {
                               method = controller[str[1]]
 
                         const slug = '/' + mod + route.path
-                        app.all(slug, method)
+                        router.all(slug, method)
                     }
                 }
 
@@ -80,4 +80,4 @@ for(let mod of modules) {
     }
 }
 
-export default app
+export default router
