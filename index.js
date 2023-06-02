@@ -7,6 +7,12 @@ import express from 'express'
 import bodyParser from 'body-parser'
 
 app.use(bodyParser.json())
+app.use(bodyParser.text())
+app.use(bodyParser.raw())
+app.use(bodyParser.urlencoded({
+    extended: true
+}))
+
 app.use('/public', express.static('./public'))
 
 // theme
