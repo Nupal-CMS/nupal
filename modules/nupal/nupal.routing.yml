@@ -2,12 +2,10 @@ admin.modules:
   path: '/modules'
   defaults:
     _controller: 'admin:modules'
-  parameters:
-    title: 'Modules'
+    _title: 'Modules'
 
 admin.index:
   path: '/'
   defaults:
     _template: 'index.html'
-  parameters:
-    title: 'Nupal'
+    _title: 'Nupal'

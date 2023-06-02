@@ -1,9 +1,8 @@
 {% extends env.VIEWS_PATH_RELATIVE ~ '/' ~ req.theme ~ '/base.html.twig' %}
-{% block title %}
-{{ info.parameters.title }}
-{% endblock %}
+{% block title %}{{ req.routing.defaults._title }}{% endblock %}
 {% block body %}
-    <form>
+
+    <form action="/nupal/modules" method="POST">
 
         <table class="table table-sm table-light">
         <thead>
@@ -23,6 +22,8 @@
         {% endfor %}
         </tbody>
         </table>
+
+        <button type="submit" class="btn-outline-light">Save</button>
 
     </form>
 

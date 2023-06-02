@@ -26,19 +26,25 @@ for(let mod of modules) {
     try {
         const modRoot = path.join(__dirname, 'modules', mod)
         const info = await yaml(`${modRoot}/${mod}.info.yml`)
-        router.use((req, res, next) => {
-            req.info = info
-            next()
-        })
-
         if(info) {
+
+            // middleware
+            try {
+                router.use((req, res, next) => {
+                    req.info = info
+                    next()
+                })
+            } catch(e) {
+                console.error(e)
+            }
 
             // middleware
             try {
                 let middleware = await yaml(`${modRoot}/${mod}.middleware.yml`)
                 for(let mid of middleware.middleware) {
                     const _mid = await import(`${modRoot}/src/middleware/${mid}.js`)
-                    router.use(_mid.default)
+                    const middleware = await _mid.default(mod);
+                    router.use(middleware)
                 }
             } catch(e) {
                 console.error(e)
@@ -50,9 +56,15 @@ for(let mod of modules) {
                 for(let key in routes) {
                     let route = routes[key]
 
+                    // tiny middleware
+                    router.use((req, res, next) => {
+                        req.routing = route
+                        next()
+                    })
+
                     if(route.defaults.hasOwnProperty('_template')) {
                         router.all(path.join('/', mod, route.path), async (req, res, next) => {
-                            res.render(route.defaults._template, {}, (err, html) => {
+                            res.render(route.defaults._template, { routing: route }, (err, html) => {
                                 if(err) console.error('_template error:', err)
                                 res.end(html)
                             })
