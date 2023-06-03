@@ -5,7 +5,6 @@ const __dirname = new URL('.', import.meta.url).pathname;
 import { getEnabledModules } from './core/modules.js'
 const modules = await getEnabledModules()
 
-import Twig from 'twig'
 import yaml from 'read-yaml-file'
 import path from 'node:path'
 
@@ -41,11 +40,17 @@ for(let mod of modules) {
             // middleware
             try {
                 let middleware = await yaml(`${modRoot}/${mod}.middleware.yml`)
+
                 for(let mid of middleware.middleware) {
+
+                    console.log('middleware: ', mid)
+
                     const _mid = await import(`${modRoot}/src/middleware/${mid}.js`)
                     const middleware = await _mid.default(mod);
+
                     router.use(middleware)
                 }
+
             } catch(e) {
                 console.error(e)
             }
@@ -64,7 +69,7 @@ for(let mod of modules) {
 
                     if(route.defaults.hasOwnProperty('_template')) {
                         router.all(path.join('/', mod, route.path), async (req, res, next) => {
-                            res.render(route.defaults._template, { routing: route }, (err, html) => {
+                            res.render(route.defaults._template, {}, (err, html) => {
                                 if(err) console.error('_template error:', err)
                                 res.end(html)
                             })

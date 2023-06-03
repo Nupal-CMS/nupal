@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1789cc0-f7bf-4001-8dff-81eb8be69a8e" name="Changes" comment="">
+    <list default="true" id="9ea7e5fb-1016-4b76-80c4-8170d79bafe2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nupal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nupal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoloader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/nupal.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/nupal.routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/meta/meta.info.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nupal/nupal.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/nupal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nupal/src/middleware/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/middleware/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/modules.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/face/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/face/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,13 +25,6 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -36,41 +32,23 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
-  <component name="ProjectId" id="2QONxF9gmhwiT2AnmxBnQtFyTfm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2Qg88NFFwhjKhJ4XuDzdhzhVImB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.15.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.15.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/t/www/nupal-cli&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/t/www/nupal/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/t/www/nupal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vendor/dharkflower/nupal" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/modules" />
-      <recent name="$PROJECT_DIR$/modules/nupal/src/templates" />
-      <recent name="$PROJECT_DIR$/views/face" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/modules/nupal-element" />
-    </key>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />

@@ -1,11 +1,8 @@
 import Twig from 'twig'
 import client from '../../../../core/redis.js'
 import { getConfig } from '../../../../core/config.js'
-import path from 'node:path'
-import fs from 'node:fs/promises'
-import yaml from 'read-yaml-file'
 
-export default async (mod) => {
+export default async mod => {
     return async (req, res, next) => {
 
         req.client = client
