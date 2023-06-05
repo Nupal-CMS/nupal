@@ -1,17 +1,39 @@
-import * as dotenv from 'dotenv'
-            dotenv.config()
-
 import {
     getEnabledModules,
-    getAllModules
+    getAllModules,
+    enableModule,
+    disableModule
 } from '../../../../core/modules.js'
 
 export const modules = async (req, res) => {
-    let allModules = await getAllModules()
+
+    const allModules = await getAllModules()
     let enabledModules = await getEnabledModules()
 
+    if(req.method === 'POST') {
+
+        let disable = []
+        allModules.map(async mod => {
+            if(!enabledModules.includes(mod)) {
+                disable.push(mod)
+            }
+        })
+
+        await req.client.del('modules')
+
+        Object.keys(req.body).map(async mod => {
+            await enableModule(mod)
+        })
+
+        disable.map(async mod => {
+            await disableModule(mod)
+        })
+
+        enabledModules = await getEnabledModules()
+    }
+
     res.render('modules.html', {
-        allModules,
-        enabledModules
+        allModules: allModules,
+        enabledModules: enabledModules
     })
 }

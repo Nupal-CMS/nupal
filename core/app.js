@@ -12,6 +12,6 @@ import { getConfig } from './config.js'
 const config = await getConfig('core.system')
 
 let theme = await client.hGet('theme', 'active')
-app.set('views', path.join(__dirname, '..', 'views', theme))
+app.set('views', path.join(__dirname, '..', 'themes', theme))
 
 export default app

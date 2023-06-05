@@ -43,10 +43,8 @@ for(let mod of modules) {
 
                 for(let mid of middleware.middleware) {
 
-                    console.log('middleware: ', mid)
-
                     const _mid = await import(`${modRoot}/src/middleware/${mid}.js`)
-                    const middleware = await _mid.default(mod);
+                    const middleware = await _mid.default;
 
                     router.use(middleware)
                 }
