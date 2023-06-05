@@ -21,17 +21,16 @@ export const modules = async (req, res) => {
 
         await req.client.del('modules')
 
-        Object.keys(req.body).map(async mod => {
-            await enableModule(mod)
-        })
-
-        disable.map(async mod => {
-            await disableModule(mod)
-        })
-
-        enabledModules = await getEnabledModules()
+        try {
+            Object.keys(req.body).map(async mod => {
+                await enableModule(mod)
+            })
+        } catch(e) {
+            console.error(e)
+        }
     }
 
+    enabledModules = await getEnabledModules()
     res.render('modules.html', {
         allModules: allModules,
         enabledModules: enabledModules
