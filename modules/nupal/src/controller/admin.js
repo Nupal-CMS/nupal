@@ -5,6 +5,12 @@ import {
     disableModule
 } from '../../../../core/modules.js'
 
+import {
+    getAllThemes,
+    getTheme,
+    setTheme
+} from '../../../../core/themes.js'
+
 export const modules = async (req, res) => {
 
     const allModules = await getAllModules()
@@ -34,5 +40,12 @@ export const modules = async (req, res) => {
     res.render('modules.html', {
         allModules: allModules,
         enabledModules: enabledModules
+    })
+}
+
+export const themes = async (req, res) => {
+    const allThemes = await getAllThemes()
+    res.render('themes.html', {
+        allThemes
     })
 }

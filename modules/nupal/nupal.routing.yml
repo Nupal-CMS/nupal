@@ -1,10 +1,16 @@
-admin.modules:
+admin.nupal.modules:
   path: '/modules'
   defaults:
     _controller: 'admin:modules'
     _title: 'Modules'
 
-admin.index:
+nupal.themes:
+  path: '/themes'
+  defaults:
+    _controller: 'admin:themes'
+    _title: 'Themes'
+
+nupal.index:
   path: '/'
   defaults:
     _template: 'index.html'

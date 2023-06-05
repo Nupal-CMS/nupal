@@ -2,7 +2,12 @@
 {% block title %}{{ req.routing.defaults._title }}{% endblock %}
 {% block body %}
 
-    <a href="/nupal/modules" class="btn btn-primary">Modules</a>
-    <a href="/nupal/themes" class="btn btn-primary">Themes</a>
+    <form action="/nupal/themes" method="POST">
+        {% for theme in allThemes %}
+
+            <button>{{ theme }}</button>
+
+        {% endfor %}
+    </form>
 
 {% endblock %}
