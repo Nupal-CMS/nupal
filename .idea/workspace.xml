@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ea7e5fb-1016-4b76-80c4-8170d79bafe2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/themes.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/themes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/themes.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/templates/themes.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/body/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/body/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoloader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
