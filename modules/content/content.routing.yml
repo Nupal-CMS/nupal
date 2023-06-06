@@ -1,0 +1,11 @@
+nupal.content.types.add:
+  path: '/types/add'
+  defaults:
+    _controller: 'admin:contentTypesAdd'
+    _title: 'Content Types'
+
+nupal.content.types:
+  path: '/types'
+  defaults:
+    _controller: 'admin:contentTypes'
+    _title: 'Content Types'

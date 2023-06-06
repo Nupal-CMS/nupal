@@ -5,7 +5,15 @@
     <form action="/nupal/themes" method="POST">
         {% for theme in allThemes %}
 
-            <button>{{ theme }}</button>
+            <button
+                class="btn {% if req.theme == theme %} btn-success {% endif %}"
+                name="{{ theme }}"
+                value="{{ theme }}"
+                type="submit"
+            >
+                {{ theme }}
+
+            </button>
 
         {% endfor %}
     </form>

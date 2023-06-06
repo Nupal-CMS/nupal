@@ -1,9 +1,5 @@
 import fs from 'node:fs/promises'
+import client from './redis.js'
 
 export const getAllThemes = async () => fs.readdir('./themes')
-export const getTheme = async mod => {
-
-}
-export const setTheme = async mod => {
-
-}
+export const enableTheme = async theme => await client.hSet('theme', 'active', theme)

@@ -2,13 +2,11 @@ import {
     getEnabledModules,
     getAllModules,
     enableModule,
-    disableModule
 } from '../../../../core/modules.js'
 
 import {
     getAllThemes,
-    getTheme,
-    setTheme
+    enableTheme
 } from '../../../../core/themes.js'
 
 export const modules = async (req, res) => {
@@ -31,6 +29,11 @@ export const modules = async (req, res) => {
 }
 
 export const themes = async (req, res) => {
+    if(req.method === 'POST') {
+        let theme = Object.keys(req.body)[0]
+        await enableTheme(theme)
+        req.theme = theme
+    }
     res.render('themes.html', {
         allThemes: await getAllThemes()
     })

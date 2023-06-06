@@ -1,0 +1,9 @@
+{% extends env.VIEWS_PATH_RELATIVE ~ '/' ~ req.theme ~ '/base.html.twig' %}
+{% block title %}{{ req.routing.defaults._title }}{% endblock %}
+{% block body %}
+
+    <a class="btn btn-primary" href="/content/types/add">Add Content Type</a>
+
+
+
+{% endblock %}
