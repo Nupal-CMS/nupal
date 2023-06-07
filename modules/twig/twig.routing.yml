@@ -1,0 +1,5 @@
+twig.virtual.render:
+  path: '/virtual/:element'
+  defaults:
+    _title: ''
+    _controller: 'virtual:element'

@@ -2,7 +2,7 @@ import * as dotenv from 'dotenv'
             dotenv.config()
 
 const __dirname = new URL('.', import.meta.url).pathname;
-import { getEnabledModules } from './core/modules.js'
+import { getEnabledModules } from './core/orm.js'
 const modules = await getEnabledModules()
 
 import yaml from 'read-yaml-file'
@@ -31,6 +31,8 @@ for(let mod of modules) {
             try {
                 router.use((req, res, next) => {
                     req.info = info
+                    req.mod = mod
+                    req.modRoot = modRoot
                     next()
                 })
             } catch(e) {

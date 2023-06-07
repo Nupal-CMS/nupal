@@ -2,12 +2,9 @@ import {
     getEnabledModules,
     getAllModules,
     enableModule,
-} from '../../../../core/modules.js'
-
-import {
     getAllThemes,
     enableTheme
-} from '../../../../core/themes.js'
+} from '../../../../core/orm.js'
 
 export const modules = async (req, res) => {
 
