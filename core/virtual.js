@@ -12,13 +12,6 @@ app.use((req, res, next) => {
 })
 
 app.get('/twig/virtual/:element', async (req, res) => {
-
-    if(!req?.body?.tpl) {
-        req.body = {}
-        req.body.tpl = 'object'// delete this
-    }
-
-    res.locals.req = req
     await twig.renderFile(path.join(process.env.MODULE_PATH, 'twig', 'src', 'virtual', req.body.tpl + '.js.twig'), { req: req }, (err, html) => {
         if(err) throw err
 

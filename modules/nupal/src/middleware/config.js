@@ -7,6 +7,7 @@ export default async (req, res, next) => {
     req.client = client
     req.theme = await client.hGet('theme', 'active')
     req.config = await getConfig('core.system')
+    res.locals.req = req
     res.render = async (tpl, data = {}) => {
 
         let path = `${process.env.MODULE_PATH}/${req.info.name}/src/templates`

@@ -4,6 +4,10 @@
 
     <a class="btn btn-primary" href="/content/types/add">Add Content Type</a>
 
+    <hr />
 
+    {% for contentType in contentTypes %}
+        <a class="btn btn-success">{{ contentType }}</a>
+    {% endfor %}
 
 {% endblock %}
