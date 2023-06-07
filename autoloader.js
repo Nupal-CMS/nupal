@@ -31,8 +31,6 @@ for(let mod of modules) {
             try {
                 router.use((req, res, next) => {
                     req.info = info
-                    req.mod = mod
-                    req.modRoot = modRoot
                     next()
                 })
             } catch(e) {
