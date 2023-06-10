@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="9ea7e5fb-1016-4b76-80c4-8170d79bafe2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/face/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/face/menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/virtual.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/content/content.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/content/content.routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/content/src/controller/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/content/src/controller/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/content/src/templates/content.types.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/content/src/templates/content.types.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nupal/nupal.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/nupal.routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/twig/src/controller/virtual.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/twig/src/middleware/twig.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/twig/src/middleware/twig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/twig/src/virtual/object.js.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/twig/twig.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/twig/twig.routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/body/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/body/menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,17 +79,5 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/node_modules/protoflower/index.js</url>
-          <line>101</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

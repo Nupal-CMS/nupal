@@ -10,13 +10,7 @@ export const modules = async (req, res) => {
 
     if(req.method === 'POST') {
         await req.client.del('modules')
-        try {
-            Object.keys(req.body).map(async mod => {
-                await enableModule(mod)
-            })
-        } catch(e) {
-            console.error(e)
-        }
+        Object.keys(req.body).map(async mod => await enableModule(mod))
     }
 
     res.render('modules.html', {

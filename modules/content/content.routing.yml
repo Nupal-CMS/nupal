@@ -3,6 +3,11 @@ nupal.content.types.add:
   defaults:
     _controller: 'admin:contentTypesAdd'
     _title: 'Content Types'
+nupal.content.types.delete:
+  path: '/types/delete'
+  defaults:
+    _controller: 'admin:contentTypesDelete'
+    _title: 'Delete Content Types'
 
 nupal.content.types:
   path: '/types'

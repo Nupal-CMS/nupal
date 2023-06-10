@@ -4,7 +4,6 @@ import * as dotenv from 'dotenv'
 import app from './core/app.js'
 import express from 'express'
 import bodyParser from 'body-parser'
-import './core/virtual.js'
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
