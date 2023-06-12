@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ea7e5fb-1016-4b76-80c4-8170d79bafe2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nupal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nupal.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autoloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/autoloader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/virtual.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/content/content.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/content/content.routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/orm.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/orm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/content/src/controller/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/content/src/controller/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/content/src/templates/content.types.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/modules/content/src/templates/content.types.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/nupal.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/nupal.routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nupal/src/controller/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nupal/src/templates/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/twig/src/controller/virtual.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/twig/src/middleware/twig.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/twig/src/middleware/twig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/twig/src/virtual/object.js.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/twig/twig.routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/twig/twig.routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/body/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/themes/body/menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,9 +55,15 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/t/www/nupal/modules/content",
+    "last_opened_file_path": "/home/t/www/nupal_webpack",
     "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">

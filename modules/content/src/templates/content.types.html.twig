@@ -2,25 +2,28 @@
 {% block title %}{{ req.routing.defaults._title }}{% endblock %}
 {% block body %}
 
-    <table class="table table-sm table-light">
-
     <a class="btn btn-primary" href="/content/types/add">Add Content Type</a>
 
     <hr />
 
-    {% for contentType in contentTypes %}
-        <tr>
-            <td align="left">
-                <a class="btn btn-success">{{ contentType }}</a>
-            </td>
-            <td align="right">
-                <form action="/content/types/delete" method="POST">
-                    <button type="submit" class="btn btn-sm btn-danger" name="{{ contentType }}" value="{{ contentType }}">delete</button>
-                </form>
-            </td>
-        </tr
-    {% endfor %}
-
+    <table class="table table-sm table-light">
+        {% for contentType in contentTypes %}
+            <tr>
+                <td align="left">
+                    <aside class="btn-group">
+                        <a class="btn btn-success">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <a class="btn btn-outline-success">{{ contentType }}</a>
+                    </aside>
+                </td>
+                <td align="right">
+                    <form action="/content/types/delete" method="POST">
+                        <button type="submit" class="btn btn-danger" name="{{ contentType }}" value="{{ contentType }}">delete</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
     </table>
 
 {% endblock %}

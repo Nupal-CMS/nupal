@@ -18,7 +18,7 @@ export const contentTypes = async (req, res) => {
 export const contentTypesAdd = async (req, res) => {
 
     if(req.method === 'POST') {
-        await createContentType(req.body.machine_name)
+        await createContentType(req.body[Object.keys(req.body)[0]])
         return res.redirect('/content/types')
     }
 
