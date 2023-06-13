@@ -6,7 +6,8 @@ import {
     enableTheme,
     getAllContentTypes,
     createContentType,
-    deleteContentType
+    deleteContentType,
+    createContent
 } from '../../../../core/orm.js'
 
 export const contentTypes = async (req, res) => {
@@ -35,4 +36,14 @@ export const contentTypesDelete = async (req, res) => {
     }
 
     else res.end('broken')
+}
+
+export const contentAdd = async (req, res) => {
+
+    if(req.method === 'POST') {
+        await createContent(req.body)
+        return res.redirect('/content/types')
+    }
+
+    return res.render('content.add.html')
 }
