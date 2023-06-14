@@ -1,0 +1,12 @@
+{% extends env.VIEWS_PATH_RELATIVE ~ '/' ~ req.theme ~ '/base.html.twig' %}
+{% block title %}{{ req.routing.defaults._title }}{% endblock %}
+{% block body %}
+
+    <div class="card">
+        {{ dump(nodes) }}
+    </div>
+
+    <br  />
+    <br  />
+
+{% endblock %}

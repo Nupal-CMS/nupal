@@ -20,3 +20,9 @@ nupal.content.add:
   defaults:
     _controller: 'admin:contentAdd'
     _title: 'Add Content'
+
+nupal.content:
+  path: '/:contentType'
+  defaults:
+    _controller: 'admin:content'
+    _title: 'Administer Content'

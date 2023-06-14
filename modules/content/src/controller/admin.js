@@ -7,8 +7,11 @@ import {
     getAllContentTypes,
     createContentType,
     deleteContentType,
-    createContent
+    createContent,
+    getAllNodes
 } from '../../../../core/orm.js'
+
+import { nodePrefix } from '../../.././../core/constants.js'
 
 export const contentTypes = async (req, res) => {
     return res.render('content.types.html', {
@@ -41,9 +44,19 @@ export const contentTypesDelete = async (req, res) => {
 export const contentAdd = async (req, res) => {
 
     if(req.method === 'POST') {
-        await createContent(req.body)
+        await createContent({
+            type: req.params.contentType,
+            data: Math.random(3)
+        })
         return res.redirect('/content/types')
     }
 
     return res.render('content.add.html')
+}
+
+export const content = async (req, res) => {
+    let nodes = await getAllNodes(req.params.contentType)
+    console.log('nodes: ', nodes)
+    return res.end('working')
+    return res.render('content.html', { nodes })
 }
