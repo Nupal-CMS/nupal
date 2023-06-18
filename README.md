@@ -1,15 +1,1 @@
-# 🚀 Welcome to your new awesome project!
-
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+To make things short and sweet... a small sapling tree will be sent to your address, due to the fact that this is under construction.
